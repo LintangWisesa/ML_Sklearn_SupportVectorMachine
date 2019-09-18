@@ -44,7 +44,7 @@ xtra, xtes, ytra, ytes = train_test_split(
 # support vector classifier
 
 from sklearn.svm import SVC
-model = SVC(gamma = 'auto')
+model = SVC(gamma = 'auto', probability=True)
 
 # train
 model.fit(xtra, ytra)
